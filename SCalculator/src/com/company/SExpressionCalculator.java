@@ -16,7 +16,7 @@ public class SExpressionCalculator {
 
     public static int expressionCalc(String expression) throws Exception{
         String[] expressions = expression.split(" ");
-        //Using stack to store the numbers
+        //Using stack to store the expressions for evaluating
         Stack<Integer> stack = new Stack<Integer>();
         int index = expressions.length - 1;
         while(index >= 0){
